@@ -1,0 +1,293 @@
+/* =========================================================
+   Self-hosted fonts (no external CDN dependency)
+   ========================================================= */
+@font-face{
+  font-family:'Inter'; font-style:normal; font-weight:400; font-display:swap;
+  src: url('../fonts/inter-latin-400-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Inter'; font-style:normal; font-weight:500; font-display:swap;
+  src: url('../fonts/inter-latin-500-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Inter'; font-style:normal; font-weight:600; font-display:swap;
+  src: url('../fonts/inter-latin-600-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Inter'; font-style:normal; font-weight:700; font-display:swap;
+  src: url('../fonts/inter-latin-700-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Space Grotesk'; font-style:normal; font-weight:500; font-display:swap;
+  src: url('../fonts/space-grotesk-latin-500-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Space Grotesk'; font-style:normal; font-weight:600; font-display:swap;
+  src: url('../fonts/space-grotesk-latin-600-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'Space Grotesk'; font-style:normal; font-weight:700; font-display:swap;
+  src: url('../fonts/space-grotesk-latin-700-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'JetBrains Mono'; font-style:normal; font-weight:400; font-display:swap;
+  src: url('../fonts/jetbrains-mono-latin-400-normal.woff2') format('woff2');
+}
+@font-face{
+  font-family:'JetBrains Mono'; font-style:normal; font-weight:500; font-display:swap;
+  src: url('../fonts/jetbrains-mono-latin-500-normal.woff2') format('woff2');
+}
+
+/* =========================================================
+   MLAN ENGINEERING — Design Tokens & Blueprint System
+   ========================================================= */
+
+:root{
+  --gold: #E59D2F;
+  --gold-deep: #C97F1B;
+  --gold-pale: #F4C976;
+
+  --paper: #F5F2EA;
+  --paper-2: #EAE4D4;
+  --paper-3: #DDD5BE;
+  --charcoal: #262320;
+  --charcoal-soft: #4A443C;
+
+  --ink: #15130F;
+  --ink-2: #1D1A14;
+  --ink-3: #26221A;
+  --bone: #EFE9DA;
+  --bone-soft: #B8AF9C;
+
+  --line-light: rgba(38,35,32,0.14);
+  --line-dark: rgba(229,157,47,0.22);
+
+  --bg: var(--paper);
+  --bg-2: var(--paper-2);
+  --bg-3: var(--paper-3);
+  --fg: var(--charcoal);
+  --fg-soft: var(--charcoal-soft);
+  --line: var(--line-light);
+  --card: #FFFFFE;
+  --shadow: 0 1px 2px rgba(38,35,32,0.06), 0 8px 24px -12px rgba(38,35,32,0.18);
+}
+
+html.dark{
+  --bg: var(--ink);
+  --bg-2: var(--ink-2);
+  --bg-3: var(--ink-3);
+  --fg: var(--bone);
+  --fg-soft: var(--bone-soft);
+  --line: var(--line-dark);
+  --card: #1C1913;
+  --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 32px -12px rgba(0,0,0,0.6);
+}
+
+*{ box-sizing: border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  transition: background-color .35s ease, color .35s ease;
+}
+
+.font-display{ font-family: 'Space Grotesk', 'Inter', sans-serif; }
+.font-mono{ font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+::selection{ background: var(--gold); color: var(--ink); }
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior:auto !important; }
+}
+
+/* =========================================================
+   Blueprint grid backdrop
+   ========================================================= */
+.blueprint-grid{
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.blueprint-grid-fine{
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* Corner crosshair / tick marks — engineering drawing registration marks */
+.reg-mark{ position:relative; }
+.reg-mark::before, .reg-mark::after{
+  content:"";
+  position:absolute;
+  background: var(--gold);
+  opacity:.9;
+}
+.reg-mark::before{ width:14px; height:2px; top:0; left:0; }
+.reg-mark::after{ width:2px; height:14px; top:0; left:0; }
+
+/* Dimension line: ── with end ticks, used as section rule */
+.dim-line{
+  position:relative;
+  height:1px;
+  background: var(--line);
+}
+.dim-line::before, .dim-line::after{
+  content:"";
+  position:absolute;
+  top:-5px;
+  width:1px;
+  height:11px;
+  background: var(--line);
+}
+.dim-line::before{ left:0; }
+.dim-line::after{ right:0; }
+
+/* Discipline code tag */
+.code-tag{
+  font-family:'JetBrains Mono', monospace;
+  font-size: .68rem;
+  letter-spacing:.14em;
+  color: var(--gold-deep);
+  border:1px solid var(--gold);
+  padding: .2rem .5rem;
+  border-radius: 2px;
+}
+html.dark .code-tag{ color: var(--gold-pale); }
+
+/* Section eyebrow */
+.eyebrow{
+  font-family:'JetBrains Mono', monospace;
+  font-size:.72rem;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color: var(--gold-deep);
+}
+html.dark .eyebrow{ color: var(--gold); }
+
+/* Cards */
+.panel{
+  background: var(--card);
+  border:1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+/* Nav link underline sweep */
+.nav-link{ position:relative; }
+.nav-link::after{
+  content:"";
+  position:absolute; left:0; bottom:-4px;
+  width:0%; height:2px; background: var(--gold);
+  transition: width .25s ease;
+}
+.nav-link:hover::after{ width:100%; }
+
+/* Theme toggle switch */
+.toggle-track{
+  width:52px; height:28px; border-radius:999px;
+  background: var(--bg-3);
+  border:1px solid var(--line);
+  position:relative;
+  transition: background-color .3s ease;
+}
+.toggle-thumb{
+  position:absolute; top:2px; left:2px;
+  width:22px; height:22px; border-radius:999px;
+  background: var(--gold);
+  transition: transform .3s cubic-bezier(.65,0,.35,1);
+  display:flex; align-items:center; justify-content:center;
+}
+html.dark .toggle-thumb{ transform: translateX(24px); }
+
+/* Reveal-on-scroll */
+.reveal{
+  opacity:0;
+  transform: translateY(24px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.16,1,.3,1);
+}
+.reveal.is-visible{ opacity:1; transform:none; }
+
+/* Hero blueprint -> photo resolve animation */
+.hero-photo{
+  filter: grayscale(1) contrast(1.05);
+  opacity: .18;
+  transform: scale(1.06);
+  transition: opacity 1.8s ease, filter 1.8s ease, transform 2.4s ease;
+}
+.hero-photo.is-resolved{
+  filter: grayscale(0) contrast(1);
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-wireframe{
+  transition: opacity 1.2s ease 1.4s;
+}
+.hero-wireframe.is-hidden{ opacity:0; }
+
+/* Marquee ticker */
+.ticker-track{
+  display:flex;
+  width:max-content;
+  animation: ticker 34s linear infinite;
+}
+.ticker-track:hover{ animation-play-state: paused; }
+@keyframes ticker{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-50%); }
+}
+
+/* Org chart connectors */
+.org-line{ background: var(--line); }
+
+/* Project filter buttons */
+.filter-btn[aria-pressed="true"]{
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+}
+
+/* Gallery image zoom on hover */
+.gallery-figure{ overflow:hidden; }
+.gallery-figure img{ transition: transform .6s cubic-bezier(.16,1,.3,1), filter .6s ease; }
+.gallery-figure:hover img{ transform: scale(1.06); }
+
+/* Number count-up target styling handled via JS text swap */
+
+/* Accordion chevron rotate */
+.acc-chevron{ transition: transform .3s ease; }
+.acc-btn[aria-expanded="true"] .acc-chevron{ transform: rotate(180deg); }
+.acc-panel{
+  display:grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .35s ease;
+}
+.acc-panel > div{ overflow:hidden; }
+.acc-panel.is-open{ grid-template-rows: 1fr; }
+
+/* Back to top */
+#backToTop{
+  opacity:0; pointer-events:none;
+  transition: opacity .3s ease, transform .3s ease;
+}
+#backToTop.show{ opacity:1; pointer-events:auto; }
+
+/* Scrollbar (webkit) — subtle, brand-tinted */
+::-webkit-scrollbar{ width:10px; height:10px; }
+::-webkit-scrollbar-track{ background: var(--bg-2); }
+::-webkit-scrollbar-thumb{ background: var(--bone-soft); border-radius:6px; }
+html.dark ::-webkit-scrollbar-thumb{ background: #3a3527; }
+
+/* Utility: crosshair plus mark used near labels */
+.plus-mark::before{ content:"+"; color: var(--gold); margin-right:.35em; font-family:'JetBrains Mono',monospace; }

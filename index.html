@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLAN Engineering Ltd — A Vision to Clear Solutions</title>
+<meta name="description" content="MLAN Engineering Limited — multidisciplinary architectural and engineering practice in Kigali, Rwanda. Structural, geotechnical, transportation, water resource, building services and construction management.">
+
+<!-- Compiled Tailwind CSS (self-hosted, no CDN dependency) -->
+<link rel="stylesheet" href="assets/css/tailwind.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-[var(--bg)] text-[var(--fg)] antialiased">
+
+<!-- =================== HEADER =================== -->
+<header id="siteHeader" class="fixed top-0 inset-x-0 z-50 backdrop-blur bg-[var(--bg)]/85 border-b border-[var(--line)] transition-shadow">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-3 shrink-0">
+      <img src="assets/img/logo.jpg" alt="MLAN Engineering logo" class="h-10 w-auto rounded-sm">
+      <span class="font-display leading-tight">
+        <span class="block text-[15px] font-bold tracking-tight">MLAN <span class="text-gold">ENGINEERING</span></span>
+        <span class="block text-[10px] font-mono tracking-[0.2em] text-[var(--fg-soft)] uppercase">A vision to clear solutions</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#team" class="nav-link">Team</a>
+      <a href="#structure" class="nav-link">Company</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button data-theme-toggle aria-pressed="false" class="toggle-track" aria-label="Toggle dark mode">
+        <span class="toggle-thumb">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#15130F" stroke-width="2" class="w-3 h-3">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+        </span>
+      </button>
+      <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-gold hover:bg-gold-deep text-ink font-semibold text-sm px-4 py-2.5 rounded-sm transition-colors">
+        Get a Quote
+      </a>
+      <button id="navToggle" aria-expanded="false" aria-controls="mobileMenu" class="lg:hidden w-10 h-10 grid place-items-center border border-[var(--line)] rounded-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="hidden lg:hidden flex-col gap-1 px-5 pb-5 font-medium text-sm border-t border-[var(--line)] bg-[var(--bg)]">
+    <a href="#about" class="py-3 border-b border-[var(--line)]">About</a>
+    <a href="#services" class="py-3 border-b border-[var(--line)]">Services</a>
+    <a href="#projects" class="py-3 border-b border-[var(--line)]">Projects</a>
+    <a href="#team" class="py-3 border-b border-[var(--line)]">Team</a>
+    <a href="#structure" class="py-3 border-b border-[var(--line)]">Company</a>
+    <a href="#contact" class="py-3">Contact</a>
+  </div>
+</header>
+
+<main>
+<!-- =================== HERO =================== -->
+<section id="home" class="relative min-h-screen flex items-end overflow-hidden pt-20">
+  <div class="absolute inset-0 blueprint-grid hero-wireframe"></div>
+  <img src="assets/img/commercial-night-01.jpg" alt="MLAN Engineering completed commercial building in Kigali, lit at night" class="hero-photo absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/20"></div>
+  <div class="absolute inset-0 bg-ink/10"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 pb-20 pt-40 w-full text-bone">
+    <div class="flex items-center gap-3 mb-6 font-mono text-xs tracking-[0.2em] uppercase text-gold">
+      <span class="reg-mark w-4 h-4 inline-block"></span>
+      Est. 2018 &middot; Niboye, Kicukiro &middot; Kigali, Rwanda
+    </div>
+    <h1 class="font-display text-[13vw] leading-[0.95] sm:text-6xl md:text-7xl font-bold max-w-4xl">
+      A vision to <span class="text-gold">clear solutions.</span>
+    </h1>
+    <p class="mt-6 max-w-xl text-bone-soft text-base sm:text-lg">
+      MLAN Engineering Limited is a multidisciplinary architectural and engineering practice delivering structural design, construction, and infrastructure solutions across Rwanda — built on precision, integrity and contemporary design.
+    </p>
+    <div class="mt-9 flex flex-wrap items-center gap-4">
+      <a href="#projects" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-deep text-ink font-semibold px-6 py-3.5 rounded-sm transition-colors">
+        View our projects
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+      </a>
+      <a href="#contact" class="inline-flex items-center gap-2 border border-bone-soft/60 hover:border-gold hover:text-gold font-semibold px-6 py-3.5 rounded-sm transition-colors">
+        Talk to our engineers
+      </a>
+    </div>
+
+    <div class="dim-line mt-14 mb-6 max-w-3xl"></div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-3xl font-mono">
+      <div>
+        <div class="text-2xl sm:text-3xl font-display font-bold text-gold"><span data-count="8">0</span></div>
+        <div class="text-[11px] uppercase tracking-widest text-bone-soft mt-1">Engineering disciplines</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-display font-bold text-gold"><span data-count="2018">0</span></div>
+        <div class="text-[11px] uppercase tracking-widest text-bone-soft mt-1">Incorporated (RDB)</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-display font-bold text-gold"><span data-count="3">0</span>+</div>
+        <div class="text-[11px] uppercase tracking-widest text-bone-soft mt-1">Project categories delivered</div>
+      </div>
+      <div>
+        <div class="text-2xl sm:text-3xl font-display font-bold text-gold">RW</div>
+        <div class="text-[11px] uppercase tracking-widest text-bone-soft mt-1">Kigali-based, nationwide reach</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== DISCIPLINE TICKER =================== -->
+<div class="bg-ink text-bone border-y border-gold/30 overflow-hidden py-3">
+  <div class="ticker-track font-mono text-xs tracking-[0.2em] uppercase">
+    <span class="flex items-center gap-8 pr-8">
+      <span class="plus-mark">Structural Engineering</span>
+      <span class="plus-mark">Geotechnical &amp; Foundation</span>
+      <span class="plus-mark">Transportation &amp; Highway</span>
+      <span class="plus-mark">Water Resource &amp; Environmental</span>
+      <span class="plus-mark">Building Services</span>
+      <span class="plus-mark">Construction Management</span>
+      <span class="plus-mark">Consultancy &amp; Specialized Services</span>
+      <span class="plus-mark">Supervision Services</span>
+    </span>
+    <span class="flex items-center gap-8 pr-8">
+      <span class="plus-mark">Structural Engineering</span>
+      <span class="plus-mark">Geotechnical &amp; Foundation</span>
+      <span class="plus-mark">Transportation &amp; Highway</span>
+      <span class="plus-mark">Water Resource &amp; Environmental</span>
+      <span class="plus-mark">Building Services</span>
+      <span class="plus-mark">Construction Management</span>
+      <span class="plus-mark">Consultancy &amp; Specialized Services</span>
+      <span class="plus-mark">Supervision Services</span>
+    </span>
+  </div>
+</div>
+
+<!-- =================== ABOUT / INTRODUCTION =================== -->
+<section id="about" class="py-24 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal">
+      <div class="eyebrow mb-4">01 &nbsp;/&nbsp; Introduction</div>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-lg">Origins placed firmly in the engineering profession.</h2>
+      <div class="dim-line my-8 max-w-md"></div>
+      <p class="text-[var(--fg-soft)] leading-relaxed max-w-lg">
+        MLAN Engineering Limited was incorporated in 2018 in Rwanda. The company practices across multiple disciplines, offering engineering, management and project finance solutions to a broad range of clients in both the public and private sector.
+      </p>
+      <p class="text-[var(--fg-soft)] leading-relaxed max-w-lg mt-4">
+        We bring into the construction industry a standard of professionalism, integrity, creativity and precision — with an established track record of quality developments, contemporary architecture and high-end finishes as a trademark of our completed works.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <span class="code-tag">RDB CODE 107693320</span>
+        <span class="code-tag">ISSUED 02/02/2018</span>
+        <span class="code-tag">TAX COMPLIANT</span>
+      </div>
+    </div>
+    <div class="reveal grid grid-cols-2 gap-4">
+      <img src="assets/img/residential-01.jpg" alt="Residential building constructed by MLAN Engineering" class="rounded-sm object-cover w-full h-64 sm:h-80 col-span-2 panel">
+      <img src="assets/img/structure-design-01.jpg" alt="3D structural engineering model of a multi-storey building" class="rounded-sm object-cover w-full h-40 sm:h-52 panel">
+      <img src="assets/img/warehouse-construction-01.jpg" alt="Steel-frame warehouse under construction" class="rounded-sm object-cover w-full h-40 sm:h-52 panel">
+    </div>
+  </div>
+</section>
+
+<!-- =================== MISSION / VISION / VALUES =================== -->
+<section class="py-24 sm:py-32 bg-[var(--bg-2)] border-y border-[var(--line)]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="eyebrow mb-4 reveal">02 &nbsp;/&nbsp; Mission, Vision &amp; Values</div>
+    <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-xl reveal">What drives the work on every site.</h2>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+      <div class="panel rounded-sm p-8 reveal">
+        <div class="code-tag inline-block mb-6">MISSION</div>
+        <p class="text-[var(--fg-soft)] leading-relaxed">
+          To provide high-quality, innovative, and cost-effective architectural and engineering services that meet international standards and exceed client expectations.
+        </p>
+      </div>
+      <div class="panel rounded-sm p-8 reveal">
+        <div class="code-tag inline-block mb-6">VISION</div>
+        <p class="text-[var(--fg-soft)] leading-relaxed">
+          To be a leading provider of Architectural and Engineering Services, delivering innovative, sustainable, and client-centered solutions — while gradually expanding into construction and infrastructure development.
+        </p>
+      </div>
+      <div class="panel rounded-sm p-8 reveal">
+        <div class="code-tag inline-block mb-6">CORE VALUES</div>
+        <ul class="text-[var(--fg-soft)] leading-relaxed space-y-2">
+          <li class="plus-mark">Integrity</li>
+          <li class="plus-mark">Excellence</li>
+          <li class="plus-mark">Innovation</li>
+          <li class="plus-mark">Sustainability</li>
+          <li class="plus-mark">Commitment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== BUSINESS ACTIVITIES =================== -->
+<section class="py-24 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-5 gap-14">
+    <div class="lg:col-span-2 reveal">
+      <div class="eyebrow mb-4">03 &nbsp;/&nbsp; Business Activities</div>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold">Registered scope of work.</h2>
+      <p class="text-[var(--fg-soft)] leading-relaxed mt-6 max-w-md">
+        Governed by Managing Director &amp; Chairperson <span class="text-[var(--fg)] font-medium">Eng. Eric Mukiza</span>, MLAN Engineering's registered activities span core construction and design work through to specialized infrastructure services.
+      </p>
+    </div>
+
+    <div class="lg:col-span-3 grid sm:grid-cols-2 gap-6">
+      <div class="panel rounded-sm p-7 reveal">
+        <div class="text-xs font-mono tracking-widest uppercase text-gold-deep mb-4">Main Activities</div>
+        <ul class="space-y-3 text-[var(--fg-soft)]">
+          <li class="plus-mark">Construction of Buildings</li>
+          <li class="plus-mark">Architectural and Engineering Services</li>
+        </ul>
+      </div>
+      <div class="panel rounded-sm p-7 reveal">
+        <div class="text-xs font-mono tracking-widest uppercase text-gold-deep mb-4">Other Registered Activities</div>
+        <ul class="space-y-3 text-[var(--fg-soft)] text-sm">
+          <li class="plus-mark">Water collection, treatment &amp; supply</li>
+          <li class="plus-mark">Sewerage and waste management</li>
+          <li class="plus-mark">Roads, bridges &amp; utility projects</li>
+          <li class="plus-mark">Demolition &amp; site preparation</li>
+          <li class="plus-mark">Plumbing, HVAC &amp; mechanical installations</li>
+          <li class="plus-mark">Specialized design &amp; consulting services</li>
+          <li class="plus-mark">Technical testing &amp; quality assurance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SERVICES =================== -->
+<section id="services" class="py-24 sm:py-32 bg-[var(--bg-2)] border-y border-[var(--line)]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div class="reveal">
+        <div class="eyebrow mb-4">04 &nbsp;/&nbsp; Our Services</div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-xl">Eight disciplines, one delivery team.</h2>
+      </div>
+      <p class="text-[var(--fg-soft)] max-w-sm reveal">Each service is coded the way our own drawings are — click a discipline to expand its full scope.</p>
+    </div>
+
+    <div class="space-y-3">
+
+      <!-- 1 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="true" aria-controls="svc-1">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">STR</span>
+            <span class="font-display font-semibold text-lg">Structural Engineering</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-1" class="acc-panel is-open">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Design of reinforced concrete &amp; steel structures (buildings, bridges, towers, culverts)</li>
+              <li class="plus-mark">Structural analysis, detailing &amp; integrity assessments</li>
+              <li class="plus-mark">Retrofitting &amp; strengthening of existing structures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="false" aria-controls="svc-2">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">GEO</span>
+            <span class="font-display font-semibold text-lg">Geotechnical &amp; Foundation Engineering</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-2" class="acc-panel">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Soil investigations &amp; foundation design</li>
+              <li class="plus-mark">Retaining wall &amp; slope stability design</li>
+              <li class="plus-mark">Ground improvement &amp; soil stabilization solutions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="false" aria-controls="svc-3">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">TRN</span>
+            <span class="font-display font-semibold text-lg">Transportation &amp; Highway Engineering</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-3" class="acc-panel">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Road &amp; pavement design</li>
+              <li class="plus-mark">Traffic studies &amp; road safety audits</li>
+              <li class="plus-mark">Bridge, culvert &amp; drainage design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="false" aria-controls="svc-4">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">WRE</span>
+            <span class="font-display font-semibold text-lg">Water Resource &amp; Environmental Engineering</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-4" class="acc-panel">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Water supply &amp; sewerage systems</li>
+              <li class="plus-mark">Drainage &amp; flood control works</li>
+              <li class="plus-mark">Riverbank protection &amp; erosion control</li>
+              <li class="plus-mark">Wastewater treatment (hazardous &amp; non-hazardous)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="false" aria-controls="svc-5">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">BSE</span>
+            <span class="font-display font-semibold text-lg">Building Services Engineering</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-5" class="acc-panel">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Plumbing &amp; HVAC (heating, ventilation, air-conditioning)</li>
+              <li class="plus-mark">Electrical design &amp; installation (power, lighting, solar)</li>
+              <li class="plus-mark">Fire protection &amp; safety systems</li>
+              <li class="plus-mark">Finishing &amp; interior works</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="false" aria-controls="svc-6">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">CEM</span>
+            <span class="font-display font-semibold text-lg">Construction Engineering &amp; Management</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-6" class="acc-panel">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Project planning &amp; scheduling</li>
+              <li class="plus-mark">Cost estimation &amp; value engineering</li>
+              <li class="plus-mark">Contract management &amp; risk management</li>
+              <li class="plus-mark">Turnkey project delivery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="false" aria-controls="svc-7">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">CSS</span>
+            <span class="font-display font-semibold text-lg">Consultancy &amp; Specialized Services</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-7" class="acc-panel">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Architectural &amp; engineering consultancy</li>
+              <li class="plus-mark">Technical testing &amp; analysis</li>
+              <li class="plus-mark">Specialized design services (green &amp; sustainable design)</li>
+              <li class="plus-mark">Management consultancy for infrastructure projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="panel rounded-sm reveal">
+        <button class="acc-btn w-full flex items-center justify-between gap-4 p-6 text-left" aria-expanded="false" aria-controls="svc-8">
+          <span class="flex items-center gap-4">
+            <span class="code-tag">SUP</span>
+            <span class="font-display font-semibold text-lg">Supervision Services</span>
+          </span>
+          <svg class="acc-chevron w-5 h-5 shrink-0 text-gold" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </button>
+        <div id="svc-8" class="acc-panel">
+          <div>
+            <ul class="px-6 pb-6 grid sm:grid-cols-3 gap-3 text-sm text-[var(--fg-soft)]">
+              <li class="plus-mark">Site supervision of civil, structural, mechanical &amp; electrical works</li>
+              <li class="plus-mark">Design review to ensure compliance with standards &amp; safety</li>
+              <li class="plus-mark">Quantity surveying (QS): cost control, measurement, BoQ verification</li>
+              <li class="plus-mark">Quality assurance, material approval &amp; progress certification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== ENGINEERING DESIGN SHOWCASE =================== -->
+<section class="py-24 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal order-2 lg:order-1 grid grid-cols-2 gap-4">
+        <img src="assets/img/structure-design-01.jpg" alt="3D isometric BIM structural model of a high-rise building" class="rounded-sm panel object-cover w-full h-56 sm:h-72">
+        <img src="assets/img/structure-design-02.png" alt="Concrete floor slab structural design model" class="rounded-sm panel object-cover w-full h-56 sm:h-72 bg-white">
+      </div>
+      <div class="reveal order-1 lg:order-2">
+        <div class="eyebrow mb-4">05 &nbsp;/&nbsp; Engineering &amp; Design</div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-lg">Low and high-rise structures, modelled before a single beam is poured.</h2>
+        <p class="text-[var(--fg-soft)] leading-relaxed mt-6 max-w-lg">
+          Every structural design is developed and verified in 3D before construction begins — from reinforced concrete frames to full high-rise steel systems — so that clients and contractors work from the same coordinated model.
+        </p>
+        <div class="dim-line my-8 max-w-md"></div>
+        <div class="flex flex-wrap gap-3">
+          <span class="code-tag">+35.20m TYP. FRAME</span>
+          <span class="code-tag">RC &amp; STEEL</span>
+          <span class="code-tag">BIM COORDINATED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PROJECTS & EXPERIENCE =================== -->
+<section id="projects" class="py-24 sm:py-32 bg-[var(--bg-2)] border-y border-[var(--line)]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
+      <div class="reveal">
+        <div class="eyebrow mb-4">06 &nbsp;/&nbsp; Projects &amp; Experience</div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-xl">Selected work across Kigali &amp; Muhanga.</h2>
+      </div>
+      <div class="flex flex-wrap gap-2 reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn border border-[var(--line)] px-4 py-2 rounded-sm text-xs font-mono uppercase tracking-widest transition-colors" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-btn border border-[var(--line)] px-4 py-2 rounded-sm text-xs font-mono uppercase tracking-widest transition-colors" data-filter="commercial" aria-pressed="false">Commercial</button>
+        <button class="filter-btn border border-[var(--line)] px-4 py-2 rounded-sm text-xs font-mono uppercase tracking-widest transition-colors" data-filter="residential" aria-pressed="false">Residential</button>
+        <button class="filter-btn border border-[var(--line)] px-4 py-2 rounded-sm text-xs font-mono uppercase tracking-widest transition-colors" data-filter="warehouse" aria-pressed="false">Warehouse</button>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <figure data-category="commercial" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/commercial-night-01.jpg" alt="Commercial building in Kigali lit at night" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">COMMERCIAL</div>
+          <div class="font-display font-semibold">Commercial Building — Kigali</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="commercial" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/commercial-01.jpg" alt="Golf Pharmacy commercial building, daytime view" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">COMMERCIAL</div>
+          <div class="font-display font-semibold">Mixed-Use Retail Block</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="commercial" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/commercial-02.jpg" alt="Yellow multi-storey commercial building with retail shops" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">COMMERCIAL</div>
+          <div class="font-display font-semibold">Retail &amp; Apartments Block</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="residential" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/residential-01.jpg" alt="Contemporary three-storey residential home" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">RESIDENTIAL</div>
+          <div class="font-display font-semibold">Contemporary Family Home</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="residential" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/residential-mansion-02.jpg" alt="White ornate mansion with columned entrance" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">RESIDENTIAL</div>
+          <div class="font-display font-semibold">Villa &amp; Grand Entrance</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="residential" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/residential-05.jpg" alt="Single-storey residential bungalow with paved courtyard" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">RESIDENTIAL</div>
+          <div class="font-display font-semibold">Courtyard Bungalow</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="warehouse" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/warehouse-construction-01.jpg" alt="Steel-frame warehouse structure under construction" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">WAREHOUSE</div>
+          <div class="font-display font-semibold">Industrial Warehouse — Structure</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="warehouse" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/warehouse-render-01.jpg" alt="Rendered visualization of completed warehouse complex" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">WAREHOUSE</div>
+          <div class="font-display font-semibold">Warehouse Complex — Design</div>
+        </figcaption>
+      </figure>
+
+      <figure data-category="warehouse" data-lightbox class="gallery-figure panel rounded-sm reveal cursor-zoom-in">
+        <img src="assets/img/warehouse-render-02.jpg" alt="Aerial rendered view of multi-unit warehouse development" class="w-full h-64 object-cover">
+        <figcaption class="p-5">
+          <div class="code-tag inline-block mb-2">WAREHOUSE</div>
+          <div class="font-display font-semibold">Multi-Unit Warehouse Development</div>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6 mt-14">
+      <div class="panel rounded-sm p-6 reveal">
+        <div class="eyebrow mb-2">Project</div>
+        <div class="font-display font-semibold">Commercial Building — Kigali</div>
+      </div>
+      <div class="panel rounded-sm p-6 reveal">
+        <div class="eyebrow mb-2">Project</div>
+        <div class="font-display font-semibold">Water Supply Project — Muhanga District</div>
+      </div>
+      <div class="panel rounded-sm p-6 reveal">
+        <div class="eyebrow mb-2">Project</div>
+        <div class="font-display font-semibold">Road &amp; Drainage Project — Kigali</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TEAM =================== -->
+<section id="team" class="py-24 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="reveal order-2 lg:order-1 relative">
+      <img src="assets/img/engineer-portrait.jpg" alt="MLAN Engineering site team member on-site" class="rounded-sm panel object-cover w-full h-[420px]">
+      <div class="absolute -bottom-6 -left-6 hidden sm:block panel rounded-sm px-6 py-4 bg-[var(--card)]">
+        <div class="text-2xl font-display font-bold text-gold">7+</div>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[var(--fg-soft)]">Disciplines under one roof</div>
+      </div>
+    </div>
+    <div class="reveal order-1 lg:order-2">
+      <div class="eyebrow mb-4">07 &nbsp;/&nbsp; Our Team</div>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-lg">A multidisciplinary team, on every site.</h2>
+      <p class="text-[var(--fg-soft)] leading-relaxed mt-6 max-w-lg">
+        MLAN Engineering is powered by a strong multidisciplinary team — civil and structural engineers, architects, electrical and mechanical engineers, quantity surveyors, site supervisors, and technical support staff. Diverse expertise combined with years of experience in design, construction and supervision ensures every project is delivered with precision, quality and innovation.
+      </p>
+      <div class="grid grid-cols-2 gap-3 mt-8 font-mono text-xs uppercase tracking-widest text-[var(--fg-soft)]">
+        <div class="plus-mark">Civil Engineers</div>
+        <div class="plus-mark">Architects</div>
+        <div class="plus-mark">Structural Engineers</div>
+        <div class="plus-mark">Electrical Engineers</div>
+        <div class="plus-mark">Mechanical Engineers</div>
+        <div class="plus-mark">Quantity Surveyors</div>
+        <div class="plus-mark">Site Supervisors</div>
+        <div class="plus-mark">Technical &amp; Drafting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ORG STRUCTURE =================== -->
+<section id="structure" class="py-24 sm:py-32 bg-[var(--bg-2)] border-y border-[var(--line)]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="eyebrow mb-4 reveal">08 &nbsp;/&nbsp; Organizational Structure</div>
+    <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-xl reveal mb-14">How the practice is organized.</h2>
+
+    <div class="reveal overflow-x-auto pb-4">
+      <div class="min-w-[820px] flex flex-col items-center gap-0 font-mono text-xs uppercase tracking-wide">
+
+        <div class="panel rounded-sm px-6 py-3 bg-gold text-ink font-semibold">Managing Director</div>
+        <div class="org-line w-px h-8"></div>
+        <div class="panel rounded-sm px-6 py-3">Technical Director</div>
+        <div class="org-line w-px h-8"></div>
+        <div class="panel rounded-sm px-6 py-3">Engineering Division</div>
+        <div class="org-line w-px h-8"></div>
+
+        <div class="org-line h-px w-[760px]"></div>
+        <div class="flex justify-between w-[760px] pt-8 gap-2">
+          <div class="flex flex-col items-center gap-2 flex-1">
+            <div class="org-line w-px h-6 -mt-8"></div>
+            <div class="panel rounded-sm px-3 py-2 text-center w-full">Civil Engineer</div>
+          </div>
+          <div class="flex flex-col items-center gap-2 flex-1">
+            <div class="org-line w-px h-6 -mt-8"></div>
+            <div class="panel rounded-sm px-3 py-2 text-center w-full">Structural Engineer</div>
+          </div>
+          <div class="flex flex-col items-center gap-2 flex-1">
+            <div class="org-line w-px h-6 -mt-8"></div>
+            <div class="panel rounded-sm px-3 py-2 text-center w-full">Architect</div>
+          </div>
+          <div class="flex flex-col items-center gap-2 flex-1">
+            <div class="org-line w-px h-6 -mt-8"></div>
+            <div class="panel rounded-sm px-3 py-2 text-center w-full">Electrical Engineer</div>
+          </div>
+          <div class="flex flex-col items-center gap-2 flex-1">
+            <div class="org-line w-px h-6 -mt-8"></div>
+            <div class="panel rounded-sm px-3 py-2 text-center w-full">Mechanical Engineer</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-24 mt-10 w-[760px]">
+          <div class="flex flex-col items-center gap-3">
+            <div class="panel rounded-sm px-4 py-2 bg-[var(--bg-3)] font-semibold">Project Support Division</div>
+            <div class="org-line w-px h-6"></div>
+            <div class="org-line h-px w-full"></div>
+            <div class="flex justify-between w-full pt-6 gap-2">
+              <div class="panel rounded-sm px-2 py-2 text-center flex-1 text-[10px]">QS</div>
+              <div class="panel rounded-sm px-2 py-2 text-center flex-1 text-[10px]">Site Supervisors</div>
+              <div class="panel rounded-sm px-2 py-2 text-center flex-1 text-[10px]">Drafting Team</div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <div class="panel rounded-sm px-4 py-2 bg-[var(--bg-3)] font-semibold">Administration Division</div>
+            <div class="org-line w-px h-6"></div>
+            <div class="panel rounded-sm px-4 py-2 text-center">Admin &amp; Support Staff</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CERTIFICATIONS =================== -->
+<section class="py-24 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-5 gap-14 items-center">
+    <div class="lg:col-span-3 reveal">
+      <div class="eyebrow mb-4">09 &nbsp;/&nbsp; Certifications &amp; Legal Compliance</div>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-lg">Registered, licensed, and tax-compliant.</h2>
+      <div class="dim-line my-8 max-w-md"></div>
+      <div class="grid sm:grid-cols-2 gap-6 max-w-xl">
+        <div>
+          <div class="text-[11px] font-mono uppercase tracking-widest text-[var(--fg-soft)]">Registered with</div>
+          <div class="font-display font-semibold mt-1">Rwanda Development Board (RDB)</div>
+        </div>
+        <div>
+          <div class="text-[11px] font-mono uppercase tracking-widest text-[var(--fg-soft)]">Company code</div>
+          <div class="font-display font-semibold mt-1">107693320</div>
+        </div>
+        <div>
+          <div class="text-[11px] font-mono uppercase tracking-widest text-[var(--fg-soft)]">Date of issuance</div>
+          <div class="font-display font-semibold mt-1">02 February 2018</div>
+        </div>
+        <div>
+          <div class="text-[11px] font-mono uppercase tracking-widest text-[var(--fg-soft)]">Tax status</div>
+          <div class="font-display font-semibold mt-1">Fully compliant, Rwandan tax law</div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-2 reveal">
+      <div class="panel rounded-sm p-10 text-center bg-ink text-bone">
+        <img src="assets/img/logo.jpg" alt="MLAN Engineering logo" class="h-16 mx-auto mb-6 rounded-sm">
+        <div class="font-mono text-xs uppercase tracking-[0.2em] text-gold mb-2">Certificate of Incorporation</div>
+        <div class="font-display text-lg font-semibold">MLAN ENGINEERING LTD</div>
+        <div class="dim-line my-5 mx-auto max-w-[220px]"></div>
+        <div class="font-mono text-xs text-bone-soft">RDB / 107693320 / 2018</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CSR =================== -->
+<section class="py-24 sm:py-32 bg-[var(--bg-2)] border-y border-[var(--line)]">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="eyebrow mb-4 reveal">10 &nbsp;/&nbsp; Corporate Social Responsibility</div>
+    <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-xl reveal mb-14">Building beyond the site boundary.</h2>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="panel rounded-sm p-8 reveal">
+        <div class="font-display font-semibold text-lg mb-3">Community-first construction</div>
+        <p class="text-[var(--fg-soft)] text-sm leading-relaxed">Supporting local communities through sustainable construction practices on every project we deliver.</p>
+      </div>
+      <div class="panel rounded-sm p-8 reveal">
+        <div class="font-display font-semibold text-lg mb-3">Eco-friendly engineering</div>
+        <p class="text-[var(--fg-soft)] text-sm leading-relaxed">Promoting environmentally responsible design and building methods across our portfolio.</p>
+      </div>
+      <div class="panel rounded-sm p-8 reveal">
+        <div class="font-display font-semibold text-lg mb-3">Skills &amp; employment</div>
+        <p class="text-[var(--fg-soft)] text-sm leading-relaxed">Creating employment and skills development opportunities for the communities we build in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section id="contact" class="py-24 sm:py-32">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-5 gap-14">
+    <div class="lg:col-span-2 reveal">
+      <div class="eyebrow mb-4">11 &nbsp;/&nbsp; Contact</div>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold max-w-sm">Let's plan your next build.</h2>
+      <p class="text-[var(--fg-soft)] leading-relaxed mt-6 max-w-sm">Reach out with your project brief and our engineering team will follow up.</p>
+
+      <div class="space-y-6 mt-10 font-mono text-sm">
+        <a href="tel:+250788450316" class="flex items-start gap-4 group">
+          <span class="w-9 h-9 shrink-0 grid place-items-center border border-[var(--line)] rounded-sm group-hover:border-gold group-hover:text-gold transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </span>
+          <span class="pt-1.5">+250 788 450 316</span>
+        </a>
+        <a href="mailto:mlanengineeringltd@gmail.com" class="flex items-start gap-4 group">
+          <span class="w-9 h-9 shrink-0 grid place-items-center border border-[var(--line)] rounded-sm group-hover:border-gold group-hover:text-gold transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6l-10 7L2 6"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+          </span>
+          <span class="pt-1.5 break-all">mlanengineeringltd@gmail.com</span>
+        </a>
+        <div class="flex items-start gap-4">
+          <span class="w-9 h-9 shrink-0 grid place-items-center border border-[var(--line)] rounded-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </span>
+          <span class="pt-1.5">Niboye, Kicukiro<br>City of Kigali, Rwanda</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-3 reveal">
+      <form id="contactForm" class="panel rounded-sm p-8 space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="name" class="block text-xs font-mono uppercase tracking-widest text-[var(--fg-soft)] mb-2">Full name</label>
+            <input id="name" name="name" type="text" required class="w-full bg-transparent border border-[var(--line)] rounded-sm px-4 py-3 focus:border-gold outline-none" placeholder="Jane Uwase">
+          </div>
+          <div>
+            <label for="email" class="block text-xs font-mono uppercase tracking-widest text-[var(--fg-soft)] mb-2">Email address</label>
+            <input id="email" name="email" type="email" required class="w-full bg-transparent border border-[var(--line)] rounded-sm px-4 py-3 focus:border-gold outline-none" placeholder="jane@example.com">
+          </div>
+        </div>
+        <div>
+          <label for="service" class="block text-xs font-mono uppercase tracking-widest text-[var(--fg-soft)] mb-2">Service of interest</label>
+          <select id="service" name="service" class="w-full bg-transparent border border-[var(--line)] rounded-sm px-4 py-3 focus:border-gold outline-none">
+            <option value="">Select a discipline</option>
+            <option>Structural Engineering</option>
+            <option>Geotechnical &amp; Foundation Engineering</option>
+            <option>Transportation &amp; Highway Engineering</option>
+            <option>Water Resource &amp; Environmental Engineering</option>
+            <option>Building Services Engineering</option>
+            <option>Construction Engineering &amp; Management</option>
+            <option>Consultancy &amp; Specialized Services</option>
+            <option>Supervision Services</option>
+          </select>
+        </div>
+        <div>
+          <label for="message" class="block text-xs font-mono uppercase tracking-widest text-[var(--fg-soft)] mb-2">Project brief</label>
+          <textarea id="message" name="message" rows="5" required class="w-full bg-transparent border border-[var(--line)] rounded-sm px-4 py-3 focus:border-gold outline-none" placeholder="Tell us about your site, location, and scope..."></textarea>
+        </div>
+        <button type="submit" class="inline-flex items-center gap-2 bg-gold hover:bg-gold-deep text-ink font-semibold px-6 py-3.5 rounded-sm transition-colors">
+          Send enquiry
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+        </button>
+        <p id="formStatus" class="text-sm mt-1 min-h-[1.25em]"></p>
+        <p class="text-xs text-[var(--fg-soft)] pt-2 border-t border-[var(--line)]">This form opens your email app with the message pre-filled — MLAN Engineering does not store submissions on this website.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- =================== FOOTER =================== -->
+<footer class="bg-ink text-bone-soft border-t border-gold/20">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="assets/img/logo.jpg" alt="MLAN Engineering logo" class="h-9 w-auto rounded-sm">
+        <span class="font-display text-bone font-bold text-sm">MLAN ENGINEERING</span>
+      </div>
+      <p class="text-sm leading-relaxed max-w-xs">A vision to clear solutions. Multidisciplinary architectural &amp; engineering practice based in Kigali, Rwanda.</p>
+    </div>
+    <div>
+      <div class="font-mono text-xs uppercase tracking-widest text-gold mb-4">Navigate</div>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#about" class="hover:text-gold transition-colors">About</a></li>
+        <li><a href="#services" class="hover:text-gold transition-colors">Services</a></li>
+        <li><a href="#projects" class="hover:text-gold transition-colors">Projects</a></li>
+        <li><a href="#team" class="hover:text-gold transition-colors">Team</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-mono text-xs uppercase tracking-widest text-gold mb-4">Disciplines</div>
+      <ul class="space-y-2 text-sm">
+        <li>Structural &amp; Geotechnical</li>
+        <li>Transportation &amp; Water Resource</li>
+        <li>Building Services</li>
+        <li>Construction Management</li>
+      </ul>
+    </div>
+    <div>
+      <div class="font-mono text-xs uppercase tracking-widest text-gold mb-4">Contact</div>
+      <ul class="space-y-2 text-sm">
+        <li><a href="tel:+250788450316" class="hover:text-gold transition-colors">+250 788 450 316</a></li>
+        <li><a href="mailto:mlanengineeringltd@gmail.com" class="hover:text-gold transition-colors break-all">mlanengineeringltd@gmail.com</a></li>
+        <li>Niboye, Kicukiro, City of Kigali</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-bone-soft">
+      <span>&copy; <span id="year"></span> MLAN Engineering Ltd. RDB 107693320.</span>
+      <span>Built with precision, integrity &amp; flair.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button id="backToTop" aria-label="Back to top" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-gold text-ink grid place-items-center shadow-lg hover:bg-gold-deep transition-colors">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+</button>
+
+<!-- Lightbox -->
+<div id="lightbox" class="hidden fixed inset-0 z-[60] bg-ink/95 items-center justify-center p-6">
+  <button data-close-lightbox aria-label="Close" class="absolute top-6 right-6 w-11 h-11 grid place-items-center border border-white/20 rounded-sm text-bone hover:border-gold hover:text-gold">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+  </button>
+  <figure class="max-w-4xl w-full">
+    <img id="lightboxImg" src="" alt="" class="w-full max-h-[75vh] object-contain rounded-sm">
+    <figcaption id="lightboxCaption" class="text-bone-soft text-center mt-4 font-mono text-sm"></figcaption>
+  </figure>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
